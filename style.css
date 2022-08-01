@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0  ;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(How-to-format-a-book.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav  img{
+    width: 20px;
+}
+.nav-links ul{
+    display: inline-block;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.nav-links ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.text-box{
+    width: 98%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 40px;
+}
+.text-box h1 p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    margin: 50px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+@media(max-width: 770px){
+    .text-box h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-box h1 p
+    {
+        text-align: center;
+    }
+    .nav-links ul li{
+        display: inline-block;
+      
+    }
+}
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(about.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   padding:100px 0px; 
+}
+.main{
+    width: 1130px;
+    max-width: 100%;
+    margin: 2px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text{
+    width: 550px;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 2spx;
+    line-height: 38px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+@media screen and (max-width: 770px){
+    .about-text h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .main{
+        flex-basis: 100%;
+    }
+    .about-text p{
+        margin: auto;
+        font-size: 15px;
+        text-align: center;
+    }
+   
+}
+.book{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(backgrnd.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0px;
+}
+.book-h h1{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #17202A   ;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:770px){
+    .book-h h1{
+        font-size: 51px;
+    }
+    .box{
+        flex-basis: 100%;
+        display: inline-block;
+    }
+    .card{
+        flex-basis: 100%;
+        display: inline-block;
+    }
+}
+.contact{
+    min-height: 75vh;
+    width: 100%;
+    background-image: url(contact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0px;
+     display: flex;
+    flex-direction: column;
+      align-items: center;
+}
+.contact-h1{
+    margin-top: 200px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+.contact .input{
+    background: white;
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 4px 10px;
+    max-width: 100%;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact .input input{
+    border: none;
+    outline: none;
+}
+.contact .input .cta{
+    background: #f9004d;
+    color: #fcfc;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:770px){
+    .contact-h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .contact .input{
+        width: 300px;
+    }
+    
+}
